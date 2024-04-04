@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.balance-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance {
+  font-size: 24px;
+  color: #333;
+}
+
+.balance-amount {
+  font-size: 36px;
+  color: #333;
+}
+
+.transaction-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.transaction-input {
+  padding: 10px;
+  margin: 0 10px 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.transaction-list {
+  width: 100%;
+}
+
+.transaction-list-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.transactions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.transaction-item.plus {
+  border-left: 5px solid #28a745;
+}
+
+.transaction-item.minus {
+  border-left: 5px solid #dc3545;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #dc3545;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.delete-btn:hover {
+  color: #bd2130;
+}
+
+.footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+/* Base styles */
+/* Add your existing CSS styles here */
+
+@media only screen and (min-width: 768px) {
+  /* Styles for tablets and larger devices */
+  .header {
+    padding: 80px 0;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .balance-container {
+    margin-bottom: 60px;
+  }
+
+  .balance {
+    font-size: 36px;
+  }
+
+  .balance-amount {
+    font-size: 56px;
+  }
+
+  .transaction-input {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+
+  .transaction-list-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .transaction-item {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .delete-btn {
+    font-size: 32px;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+}
